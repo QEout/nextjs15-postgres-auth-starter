@@ -4,6 +4,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
+    "db:generate": "npx drizzle-kit generate",
+    "db:push": "npx drizzle-kit push",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +15,7 @@
     "next": "^15.3.1",
     "next-auth": "5.0.0-beta.4",
     "postgres": "^3.4.5",
+    "dotenv": "^16.4.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -21,6 +24,7 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "autoprefixer": "^10.4.16",
+    "drizzle-kit": "^0.31.0",
     "eslint": "8.56.0",
     "eslint-config-next": "^15.3.1",
     "postcss": "^8.4.32",
