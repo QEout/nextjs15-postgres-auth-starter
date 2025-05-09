@@ -11,7 +11,8 @@ export const authConfig = {
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       let isLoggedIn = !!auth?.user;
-      let isOnProtectedRoute = !["/login", "/register", "/"].includes(
+      // 这里一定不能取反，不然会导致资源被重定向到登录页面
+      let isOnProtectedRoute = ["/main"].includes(
         nextUrl.pathname
       );
 
